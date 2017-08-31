@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A2C8F231C6BBD2300846019 /* Bugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2C8F181C6BBD2300846019 /* Bugsnag.framework */; };
 		8A2C8F4F1C6BBE3C00846019 /* Bugsnag.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2C8F3D1C6BBE3C00846019 /* Bugsnag.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A2C8F501C6BBE3C00846019 /* Bugsnag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C8F3E1C6BBE3C00846019 /* Bugsnag.m */; };
 		8A2C8F511C6BBE3C00846019 /* BugsnagBreadcrumb.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2C8F3F1C6BBE3C00846019 /* BugsnagBreadcrumb.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,35 +26,54 @@
 		8A2C8F6C1C6BBE9500846019 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2C8F6B1C6BBE9500846019 /* SystemConfiguration.framework */; };
 		8A2C8F721C6BBEA400846019 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2C8F711C6BBEA400846019 /* MessageUI.framework */; };
 		8A2C8F741C6BBEAD00846019 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2C8F731C6BBEAD00846019 /* UIKit.framework */; };
-		8A2C8F8F1C6BBFDD00846019 /* BugsnagBreadcrumbsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C8F8B1C6BBFDD00846019 /* BugsnagBreadcrumbsTest.m */; };
-		8A2C8F901C6BBFDD00846019 /* BugsnagCrashReportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C8F8C1C6BBFDD00846019 /* BugsnagCrashReportTests.m */; };
-		8A2C8F911C6BBFDD00846019 /* BugsnagSinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C8F8D1C6BBFDD00846019 /* BugsnagSinkTests.m */; };
-		8A2C8F941C6BBFE700846019 /* libKSCrashLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2C8F931C6BBFE700846019 /* libKSCrashLib.a */; };
-		8A2C8F961C6BC08600846019 /* report.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C8F951C6BC08600846019 /* report.json */; };
 		8A381D4B1EAA49A700AF8429 /* BugsnagLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A381D491EAA49A700AF8429 /* BugsnagLogger.h */; };
-		8A4E733F1DC13281001F7CC8 /* BugsnagConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E733E1DC13281001F7CC8 /* BugsnagConfigurationTests.m */; };
 		8A627CD01EC2A5FD00F7C04E /* BSGSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A627CCF1EC2A5FD00F7C04E /* BSGSerialization.h */; };
 		8A627CD21EC2A62900F7C04E /* BSGSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A627CD11EC2A62900F7C04E /* BSGSerialization.m */; };
 		8A87351E1C6D2ADE00EDBD5B /* BSGKSCrashReportWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A87351D1C6D2ADE00EDBD5B /* BSGKSCrashReportWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8AAA64011D2407CE00A9A123 /* Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAA64001D2407CE00A9A123 /* Kiwi.framework */; };
-		8AE1BC951DEFCE8B00D16CEF /* BugsnagConfigurationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE1BC941DEFCE8B00D16CEF /* BugsnagConfigurationSpec.m */; };
+		FEF044571F5837B1004CC08A /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF044561F58379C004CC08A /* KSCrash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8A2C8F241C6BBD2300846019 /* PBXContainerItemProxy */ = {
+		FEF0444F1F58379C004CC08A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8A2C8F0F1C6BBD2300846019 /* Project object */;
+			containerPortal = FEF044481F58379C004CC08A /* KSCrash-iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB6D132617EB749A00BC2C04;
+			remoteInfo = KSCrashLib;
+		};
+		FEF044511F58379C004CC08A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF044481F58379C004CC08A /* KSCrash-iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB6D133317EB749A00BC2C04;
+			remoteInfo = KSCrashTests;
+		};
+		FEF044531F58379C004CC08A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF044481F58379C004CC08A /* KSCrash-iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03DE7B6A1C84DEF700F789BA;
+			remoteInfo = KSCrash;
+		};
+		FEF044551F58379C004CC08A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF044481F58379C004CC08A /* KSCrash-iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EDF2BF211CCF15AD004BADF4;
+			remoteInfo = KSCrash_static;
+		};
+		FEF0445A1F583995004CC08A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF044481F58379C004CC08A /* KSCrash-iOS.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 8A2C8F171C6BBD2300846019;
-			remoteInfo = Bugsnag;
+			remoteGlobalIDString = EDF2BE781CCF15AD004BADF4;
+			remoteInfo = KSCrash_static;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8A2C8F181C6BBD2300846019 /* Bugsnag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bugsnag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2C8F1D1C6BBD2300846019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8A2C8F221C6BBD2300846019 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A2C8F291C6BBD2300846019 /* TestsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = TestsInfo.plist; sourceTree = "<group>"; };
 		8A2C8F321C6BBD7200846019 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = SOURCE_ROOT; };
 		8A2C8F3D1C6BBE3C00846019 /* Bugsnag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bugsnag.h; path = ../Source/Bugsnag.h; sourceTree = SOURCE_ROOT; };
 		8A2C8F3E1C6BBE3C00846019 /* Bugsnag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bugsnag.m; path = ../Source/Bugsnag.m; sourceTree = SOURCE_ROOT; };
@@ -78,19 +96,12 @@
 		8A2C8F6F1C6BBE9F00846019 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		8A2C8F711C6BBEA400846019 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		8A2C8F731C6BBEAD00846019 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8A2C8F8B1C6BBFDD00846019 /* BugsnagBreadcrumbsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagBreadcrumbsTest.m; path = ../Tests/BugsnagBreadcrumbsTest.m; sourceTree = SOURCE_ROOT; };
-		8A2C8F8C1C6BBFDD00846019 /* BugsnagCrashReportTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagCrashReportTests.m; path = ../Tests/BugsnagCrashReportTests.m; sourceTree = SOURCE_ROOT; };
-		8A2C8F8D1C6BBFDD00846019 /* BugsnagSinkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagSinkTests.m; path = ../Tests/BugsnagSinkTests.m; sourceTree = SOURCE_ROOT; };
 		8A2C8F931C6BBFE700846019 /* libKSCrashLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKSCrashLib.a; path = "../Carthage/Checkouts/KSCrash/iOS/build/Debug-iphoneos/libKSCrashLib.a"; sourceTree = "<group>"; };
-		8A2C8F951C6BC08600846019 /* report.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = report.json; path = ../Tests/report.json; sourceTree = SOURCE_ROOT; };
 		8A381D491EAA49A700AF8429 /* BugsnagLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagLogger.h; path = ../Source/BugsnagLogger.h; sourceTree = SOURCE_ROOT; };
-		8A4E733E1DC13281001F7CC8 /* BugsnagConfigurationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagConfigurationTests.m; path = ../Tests/BugsnagConfigurationTests.m; sourceTree = SOURCE_ROOT; };
 		8A627CCF1EC2A5FD00F7C04E /* BSGSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSGSerialization.h; path = ../Source/BSGSerialization.h; sourceTree = SOURCE_ROOT; };
 		8A627CD11EC2A62900F7C04E /* BSGSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSGSerialization.m; path = ../Source/BSGSerialization.m; sourceTree = SOURCE_ROOT; };
 		8A87351D1C6D2ADE00EDBD5B /* BSGKSCrashReportWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSGKSCrashReportWriter.h; path = ../Source/BSGKSCrashReportWriter.h; sourceTree = SOURCE_ROOT; };
-		8AAA63FE1D2404BB00A9A123 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = "../development/Nocilla/build/Debug-iphoneos/Nocilla.framework"; sourceTree = "<group>"; };
-		8AAA64001D2407CE00A9A123 /* Kiwi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kiwi.framework; path = "../development/Kiwi/build/Debug-iphoneos/Kiwi.framework"; sourceTree = "<group>"; };
-		8AE1BC941DEFCE8B00D16CEF /* BugsnagConfigurationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagConfigurationSpec.m; path = ../Tests/BugsnagConfigurationSpec.m; sourceTree = SOURCE_ROOT; };
+		FEF044481F58379C004CC08A /* KSCrash-iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "KSCrash-iOS.xcodeproj"; path = "../Carthage/Checkouts/KSCrash/iOS/KSCrash-iOS.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,19 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A2C8F941C6BBFE700846019 /* libKSCrashLib.a in Frameworks */,
+				FEF044571F5837B1004CC08A /* KSCrash.framework in Frameworks */,
 				8A2C8F741C6BBEAD00846019 /* UIKit.framework in Frameworks */,
 				8A2C8F721C6BBEA400846019 /* MessageUI.framework in Frameworks */,
 				8A2C8F6C1C6BBE9500846019 /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A2C8F1F1C6BBD2300846019 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8AAA64011D2407CE00A9A123 /* Kiwi.framework in Frameworks */,
-				8A2C8F231C6BBD2300846019 /* Bugsnag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,8 +122,8 @@
 		8A2C8F0E1C6BBD2300846019 = {
 			isa = PBXGroup;
 			children = (
+				FEF044481F58379C004CC08A /* KSCrash-iOS.xcodeproj */,
 				8A2C8F1A1C6BBD2300846019 /* Bugsnag */,
-				8A2C8F261C6BBD2300846019 /* Tests */,
 				8A2C8F751C6BBEBB00846019 /* Frameworks */,
 				8A2C8F191C6BBD2300846019 /* Products */,
 			);
@@ -131,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				8A2C8F181C6BBD2300846019 /* Bugsnag.framework */,
-				8A2C8F221C6BBD2300846019 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,26 +166,9 @@
 			path = Bugsnag;
 			sourceTree = "<group>";
 		};
-		8A2C8F261C6BBD2300846019 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				8A2C8F8B1C6BBFDD00846019 /* BugsnagBreadcrumbsTest.m */,
-				8A2C8F8C1C6BBFDD00846019 /* BugsnagCrashReportTests.m */,
-				8AE1BC941DEFCE8B00D16CEF /* BugsnagConfigurationSpec.m */,
-				8A4E733E1DC13281001F7CC8 /* BugsnagConfigurationTests.m */,
-				8A2C8F8D1C6BBFDD00846019 /* BugsnagSinkTests.m */,
-				8A2C8F951C6BC08600846019 /* report.json */,
-				8A2C8F291C6BBD2300846019 /* TestsInfo.plist */,
-			);
-			name = Tests;
-			path = BugsnagTests;
-			sourceTree = "<group>";
-		};
 		8A2C8F751C6BBEBB00846019 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8AAA64001D2407CE00A9A123 /* Kiwi.framework */,
-				8AAA63FE1D2404BB00A9A123 /* Nocilla.framework */,
 				8A2C8F931C6BBFE700846019 /* libKSCrashLib.a */,
 				8A2C8F731C6BBEAD00846019 /* UIKit.framework */,
 				8A2C8F711C6BBEA400846019 /* MessageUI.framework */,
@@ -193,6 +177,17 @@
 				8A2C8F6B1C6BBE9500846019 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEF044491F58379C004CC08A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEF044501F58379C004CC08A /* libKSCrashLib.a */,
+				FEF044521F58379C004CC08A /* KSCrashTests.xctest */,
+				FEF044541F58379C004CC08A /* KSCrash.framework */,
+				FEF044561F58379C004CC08A /* KSCrash.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,29 +226,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				FEF0445B1F583995004CC08A /* PBXTargetDependency */,
 			);
 			name = Bugsnag;
 			productName = Bugsnag;
 			productReference = 8A2C8F181C6BBD2300846019 /* Bugsnag.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		8A2C8F211C6BBD2300846019 /* Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A2C8F2F1C6BBD2300846019 /* Build configuration list for PBXNativeTarget "Tests" */;
-			buildPhases = (
-				8A2C8F1E1C6BBD2300846019 /* Sources */,
-				8A2C8F1F1C6BBD2300846019 /* Frameworks */,
-				8A2C8F201C6BBD2300846019 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8A2C8F251C6BBD2300846019 /* PBXTargetDependency */,
-			);
-			name = Tests;
-			productName = BugsnagTests;
-			productReference = 8A2C8F221C6BBD2300846019 /* Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -265,9 +243,6 @@
 				ORGANIZATIONNAME = Bugsnag;
 				TargetAttributes = {
 					8A2C8F171C6BBD2300846019 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
-					8A2C8F211C6BBD2300846019 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -282,27 +257,55 @@
 			mainGroup = 8A2C8F0E1C6BBD2300846019;
 			productRefGroup = 8A2C8F191C6BBD2300846019 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FEF044491F58379C004CC08A /* Products */;
+					ProjectRef = FEF044481F58379C004CC08A /* KSCrash-iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8A2C8F171C6BBD2300846019 /* Bugsnag */,
-				8A2C8F211C6BBD2300846019 /* Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FEF044501F58379C004CC08A /* libKSCrashLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKSCrashLib.a;
+			remoteRef = FEF0444F1F58379C004CC08A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FEF044521F58379C004CC08A /* KSCrashTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KSCrashTests.xctest;
+			remoteRef = FEF044511F58379C004CC08A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FEF044541F58379C004CC08A /* KSCrash.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KSCrash.framework;
+			remoteRef = FEF044531F58379C004CC08A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FEF044561F58379C004CC08A /* KSCrash.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KSCrash.framework;
+			remoteRef = FEF044551F58379C004CC08A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8A2C8F161C6BBD2300846019 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A2C8F201C6BBD2300846019 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A2C8F961C6BC08600846019 /* report.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,25 +328,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A2C8F1E1C6BBD2300846019 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A2C8F8F1C6BBFDD00846019 /* BugsnagBreadcrumbsTest.m in Sources */,
-				8AE1BC951DEFCE8B00D16CEF /* BugsnagConfigurationSpec.m in Sources */,
-				8A2C8F911C6BBFDD00846019 /* BugsnagSinkTests.m in Sources */,
-				8A2C8F901C6BBFDD00846019 /* BugsnagCrashReportTests.m in Sources */,
-				8A4E733F1DC13281001F7CC8 /* BugsnagConfigurationTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8A2C8F251C6BBD2300846019 /* PBXTargetDependency */ = {
+		FEF0445B1F583995004CC08A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8A2C8F171C6BBD2300846019 /* Bugsnag */;
-			targetProxy = 8A2C8F241C6BBD2300846019 /* PBXContainerItemProxy */;
+			name = KSCrash_static;
+			targetProxy = FEF0445A1F583995004CC08A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -445,6 +436,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -470,6 +462,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -482,28 +475,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bugsnag.Bugsnag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		8A2C8F301C6BBD2300846019 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TestsInfo.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bugsnag.BugsnagTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		8A2C8F311C6BBD2300846019 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TestsInfo.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bugsnag.BugsnagTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -524,15 +495,6 @@
 			buildConfigurations = (
 				8A2C8F2D1C6BBD2300846019 /* Debug */,
 				8A2C8F2E1C6BBD2300846019 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8A2C8F2F1C6BBD2300846019 /* Build configuration list for PBXNativeTarget "Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A2C8F301C6BBD2300846019 /* Debug */,
-				8A2C8F311C6BBD2300846019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
