@@ -37,7 +37,7 @@
 		8A627CD21EC2A62900F7C04E /* BSGSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A627CD11EC2A62900F7C04E /* BSGSerialization.m */; };
 		8A87351E1C6D2ADE00EDBD5B /* BSGKSCrashReportWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A87351D1C6D2ADE00EDBD5B /* BSGKSCrashReportWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8AE1BC951DEFCE8B00D16CEF /* BugsnagConfigurationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE1BC941DEFCE8B00D16CEF /* BugsnagConfigurationSpec.m */; };
-		FE7AB29A1F59ACEE00576380 /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB5DA221F59032800682224 /* KSCrash.framework */; };
+		FE1E81341F59BE0E009184AC /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB5DA221F59032800682224 /* KSCrash.framework */; };
 		FEB5DA371F59052900682224 /* Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB5DA301F59051A00682224 /* Kiwi.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +48,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8A2C8F171C6BBD2300846019;
 			remoteInfo = Bugsnag;
+		};
+		FE1E81321F59BE0A009184AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEB5DA161F59032800682224 /* KSCrash-iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB6D133317EB749A00BC2C04;
+			remoteInfo = KSCrashTests;
 		};
 		FEB5DA211F59032800682224 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -132,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE7AB29A1F59ACEE00576380 /* KSCrash.framework in Frameworks */,
+				FE1E81341F59BE0E009184AC /* KSCrash.framework in Frameworks */,
 				8A2C8F741C6BBEAD00846019 /* UIKit.framework in Frameworks */,
 				8A2C8F721C6BBEA400846019 /* MessageUI.framework in Frameworks */,
 				8A2C8F6C1C6BBE9500846019 /* SystemConfiguration.framework in Frameworks */,
@@ -231,6 +238,7 @@
 		FEB5DA171F59032800682224 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				FE1E81331F59BE0A009184AC /* KSCrashTests.xctest */,
 				FEB5DA221F59032800682224 /* KSCrash.framework */,
 			);
 			name = Products;
@@ -353,6 +361,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		FE1E81331F59BE0A009184AC /* KSCrashTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KSCrashTests.xctest;
+			remoteRef = FE1E81321F59BE0A009184AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		FEB5DA221F59032800682224 /* KSCrash.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
