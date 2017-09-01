@@ -37,7 +37,7 @@
 		8A627CD21EC2A62900F7C04E /* BSGSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A627CD11EC2A62900F7C04E /* BSGSerialization.m */; };
 		8A87351E1C6D2ADE00EDBD5B /* BSGKSCrashReportWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A87351D1C6D2ADE00EDBD5B /* BSGKSCrashReportWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8AE1BC951DEFCE8B00D16CEF /* BugsnagConfigurationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE1BC941DEFCE8B00D16CEF /* BugsnagConfigurationSpec.m */; };
-		FEB5DA271F59046900682224 /* libKSCrashLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB5DA1E1F59032800682224 /* libKSCrashLib.a */; };
+		FE7AB29A1F59ACEE00576380 /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB5DA221F59032800682224 /* KSCrash.framework */; };
 		FEB5DA371F59052900682224 /* Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB5DA301F59051A00682224 /* Kiwi.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,40 +49,12 @@
 			remoteGlobalIDString = 8A2C8F171C6BBD2300846019;
 			remoteInfo = Bugsnag;
 		};
-		FEB5DA1D1F59032800682224 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEB5DA161F59032800682224 /* KSCrash-iOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CB6D132617EB749A00BC2C04;
-			remoteInfo = KSCrashLib;
-		};
-		FEB5DA1F1F59032800682224 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEB5DA161F59032800682224 /* KSCrash-iOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CB6D133317EB749A00BC2C04;
-			remoteInfo = KSCrashTests;
-		};
 		FEB5DA211F59032800682224 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FEB5DA161F59032800682224 /* KSCrash-iOS.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 03DE7B6A1C84DEF700F789BA;
 			remoteInfo = KSCrash;
-		};
-		FEB5DA231F59032800682224 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEB5DA161F59032800682224 /* KSCrash-iOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EDF2BF211CCF15AD004BADF4;
-			remoteInfo = KSCrash_static;
-		};
-		FEB5DA251F59033600682224 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEB5DA161F59032800682224 /* KSCrash-iOS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EDF2BE781CCF15AD004BADF4;
-			remoteInfo = KSCrash_static;
 		};
 		FEB5DA2F1F59051A00682224 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -160,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB5DA271F59046900682224 /* libKSCrashLib.a in Frameworks */,
+				FE7AB29A1F59ACEE00576380 /* KSCrash.framework in Frameworks */,
 				8A2C8F741C6BBEAD00846019 /* UIKit.framework in Frameworks */,
 				8A2C8F721C6BBEA400846019 /* MessageUI.framework in Frameworks */,
 				8A2C8F6C1C6BBE9500846019 /* SystemConfiguration.framework in Frameworks */,
@@ -259,10 +231,7 @@
 		FEB5DA171F59032800682224 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FEB5DA1E1F59032800682224 /* libKSCrashLib.a */,
-				FEB5DA201F59032800682224 /* KSCrashTests.xctest */,
 				FEB5DA221F59032800682224 /* KSCrash.framework */,
-				FEB5DA241F59032800682224 /* KSCrash.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,7 +283,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FEB5DA261F59033600682224 /* PBXTargetDependency */,
 			);
 			name = Bugsnag;
 			productName = Bugsnag;
@@ -385,32 +353,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		FEB5DA1E1F59032800682224 /* libKSCrashLib.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libKSCrashLib.a;
-			remoteRef = FEB5DA1D1F59032800682224 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FEB5DA201F59032800682224 /* KSCrashTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = KSCrashTests.xctest;
-			remoteRef = FEB5DA1F1F59032800682224 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		FEB5DA221F59032800682224 /* KSCrash.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = KSCrash.framework;
 			remoteRef = FEB5DA211F59032800682224 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FEB5DA241F59032800682224 /* KSCrash.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KSCrash.framework;
-			remoteRef = FEB5DA231F59032800682224 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		FEB5DA301F59051A00682224 /* Kiwi.framework */ = {
@@ -497,11 +444,6 @@
 			isa = PBXTargetDependency;
 			target = 8A2C8F171C6BBD2300846019 /* Bugsnag */;
 			targetProxy = 8A2C8F241C6BBD2300846019 /* PBXContainerItemProxy */;
-		};
-		FEB5DA261F59033600682224 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KSCrash_static;
-			targetProxy = FEB5DA251F59033600682224 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
