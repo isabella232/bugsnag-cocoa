@@ -41,6 +41,13 @@
 			remoteGlobalIDString = CB6D133317EB749A00BC2C04;
 			remoteInfo = KSCrashTests;
 		};
+		FE2D18001F7AF2A600C26315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEB5DA161F59032800682224 /* KSCrash-iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03DE7B691C84DEF700F789BA;
+			remoteInfo = KSCrash;
+		};
 		FEB5DA211F59032800682224 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FEB5DA161F59032800682224 /* KSCrash-iOS.xcodeproj */;
@@ -224,6 +231,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FE2D18011F7AF2A600C26315 /* PBXTargetDependency */,
 			);
 			name = Bugsnag;
 			productName = Bugsnag;
@@ -312,6 +320,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE2D18011F7AF2A600C26315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KSCrash;
+			targetProxy = FE2D18001F7AF2A600C26315 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8A2C8F2A1C6BBD2300846019 /* Debug */ = {
